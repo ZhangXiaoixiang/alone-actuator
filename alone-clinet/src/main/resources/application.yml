@@ -1,0 +1,14 @@
+#开启监控中心所有路径API----客户端也得开启
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+server:
+  port: 8081
+#配置服务
+spring:
+  boot:
+    admin:
+      client:
+        url: "http://localhost:8080"

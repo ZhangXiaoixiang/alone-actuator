@@ -1,0 +1,6 @@
+#开启监控中心所有路径API
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
